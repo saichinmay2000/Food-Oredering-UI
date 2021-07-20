@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 .index{
@@ -8,6 +8,8 @@
     .top{
         display: grid;
         grid-template-columns: 20% 40% 20%;
+
+        
         .menu{
             list-style-type: none;
             font-style: none;
@@ -16,7 +18,7 @@
             .active{
                 text-decoration: line-through;
                 text-decoration-color: #ff4e4e;
-            }        
+            }
             a{
                 color: black;
                 text-decoration: none;
@@ -36,12 +38,32 @@
                     align-self: center;
                 }
             }
+
+            @media screen and (max-width:700px){
+                display: none;
+            }
         }
         .content{
             margin-top: -120px;
+            font-size: 90px;
             .what{
-                font-size: 80px;
                 font-family: 'Playfair Display', serif;
+            }
+            
+            @media screen and (max-width:700px){
+                font-size: 20px;
+                margin-top: 0px;
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                font-size: 25px;
+                font-weight: bolder;
+                flex-direction: column;
+                .what{
+                    text-align: start;
+                    width: 200px;
+                    margin-left: 20px;
+                }
             }
         }
         .content-1{
@@ -56,6 +78,38 @@
                 text-decoration-color: #ff4e4e;
                 color: #ff4e4e;   
             }
+
+            @media screen and (max-width: 700px){
+                margin: 0px;
+                padding: 0px;
+                font-size: 16px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .small{
+                    width: 80%;
+                }
+                .underline{
+                    margin-top: -10px;
+                    display: flex;
+                    align-items: flex-start;
+                    width: 80%;
+                }
+            }
+            
         }
+    }
+
+    
+    @media screen and (max-width:700px){
+        padding: 0px;
+        margin: 0px;
+        .top{
+            display: flex;
+            flex-direction: column;
+        }
+
     }
 }
