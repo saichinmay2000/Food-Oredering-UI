@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 .index{
@@ -16,7 +16,7 @@
             .active{
                 text-decoration: line-through;
                 text-decoration-color: #ff4e4e;
-            }
+            }        
             a{
                 color: black;
                 text-decoration: none;
@@ -39,8 +39,8 @@
         }
         .content{
             margin-top: -120px;
-            font-size: 90px;
             .what{
+                font-size: 80px;
                 font-family: 'Playfair Display', serif;
             }
         }

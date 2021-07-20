@@ -23,7 +23,7 @@ function Index()
                 
                 <div className="content">
                     <p className="what">
-                    What are you having for lunch?
+                    What are you having for Lunch?
                     </p>
                     <Items/>
                 </div>
